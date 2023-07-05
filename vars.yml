@@ -1,4 +1,4 @@
---- #task playbook
+--- #variable playbook
 - hosts: all
   user: ansible
   become: yes
