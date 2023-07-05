@@ -1,9 +1,9 @@
 ---  #Handlers Playbook
 - hosts: all
-- user: ansible
-- become: yes
-- connection: ssh
-- gather_facts: yes
+  user: ansible
+  become: yes
+  connection: ssh
+  gather_facts: yes
   tasks:
     - name: Install httpd server
       action: yum name=httpd state=installed
