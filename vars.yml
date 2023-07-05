@@ -9,6 +9,5 @@
   tasks:
     - name: Install package in Linux servers
       action: yum name='{{pkglinux}}' state=installed 
-
     - name: Install package in Ubuntu servers
       actions: apt name='{{pkgubuntu}}' state=present
