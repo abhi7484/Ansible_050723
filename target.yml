@@ -1,5 +1,5 @@
 ---     #Target Playbook
-- hosts: ubuntu
+- hosts: linux
   user: ansible
   become: yes
   connection: ssh
