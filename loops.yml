@@ -1,0 +1,13 @@
+---  #Loop Playbook
+- hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: Add a list of users
+      user: name='{{item}}' state=present
+      with item:
+        - Abhishek
+        - Abhilash
+        - Debashis
+        - Sanmay
