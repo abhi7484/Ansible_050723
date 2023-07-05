@@ -1,7 +1,7 @@
 ---     #Target Playbook
--hosts: linux
--user: ansible
--become: yes
--connection: ssh
--gather_facts: yes
+- hosts: linux
+- user: ansible
+- become: yes
+- connection: ssh
+- gather_facts: yes
 ...
