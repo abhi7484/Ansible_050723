@@ -6,5 +6,6 @@
   tasks:
     - name: Install httpd in Linux servers
       action: yum name=httpd state=installed 
+      
     - name: Install apache2 in Ubuntu servers
       actions: apt name=apache2 state=present
