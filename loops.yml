@@ -6,8 +6,8 @@
   tasks:
     - name: Add a list of users
       action: user name='{{item}}' state=present
-      with item:
-        -Abhishek
-        -Abhilash
-        -Debashis
-        -Sanmay
+      with items:
+        - Abhishek
+        - Abhilash
+        - Debashis
+        - Sanmay
