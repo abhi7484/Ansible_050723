@@ -5,7 +5,7 @@
   connection: ssh
   tasks:
     - name: Add a list of users
-      user: name='{{item}}' state=present
+      action: user name='{{item}}' state=present
       with item:
         -Abhishek
         -Abhilash
