@@ -7,7 +7,7 @@
     - name: Add a list of users
       action: user name='{{item}}' state=present
       with item:
-        - Abhishek
-        - Abhilash
-        - Debashis
-        - Sanmay
+        -Abhishek
+        -Abhilash
+        -Debashis
+        -Sanmay
