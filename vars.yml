@@ -1,0 +1,14 @@
+--- #task playbook
+- hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+  vars:
+    pkglinux: httpd
+    pkgubuntu: apache2
+  tasks:
+    - name: Install package in Linux servers
+      action: yum name='{{pkglinux}}' state=installed 
+
+    - name: Install package in Ubuntu servers
+      actions: apt name='{{pkgubuntu}}' state=present
