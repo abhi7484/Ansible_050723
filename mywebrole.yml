@@ -1,0 +1,7 @@
+---
+hosts: linux
+user: ansible
+become: yes
+connection: ssh
+roles:
+  - {role: mywebrole, when: ansible_os_family=="Debian"}
